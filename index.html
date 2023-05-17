@@ -7,6 +7,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 </head>
 <body>
+    <div id="app">
+    <div v-show="this.listaMail.length === 10">Contenitore Mail
+        <li v-for="mail in listaMail">{{mail}}</li>
+    </div>
+    </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="/js/main.js"></script>
 </body>
